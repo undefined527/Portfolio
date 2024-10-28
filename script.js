@@ -20,7 +20,7 @@ const projects = [
     ),
     createProjectItemWithImage(
         "Psuedo 3D Rendering", 
-        "This is yet another project I made with the help of the java.swing GUI library. This project tries to recreate the type of rendering old-school 3d games such as doom would use. As the name implies, it isnt technically 3d.",
+        "This is another project I made with the help of the java.swing GUI library. This project tries to recreate the type of rendering old-school 3d games such as Doom used. As the name implies, this type of rendering technically isn't 3d.",
         "images/pseudo-3d.PNG",
         "https://github.com/undefined527/Pseudo3d"
     )
