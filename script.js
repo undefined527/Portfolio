@@ -1,4 +1,4 @@
-const TYPE_SPEED = 50; // miliseconds per character
+const TYPE_SPEED = 110; // miliseconds per character
 
 const intersectionObserver = new IntersectionObserver(typeTextOnIntersection, {threshold: .5})
 const typeTexts = document.querySelectorAll(".type-text");
