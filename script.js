@@ -127,7 +127,11 @@ function typeTextOnIntersection(entry, observer)
     {
         if (entry[i].isIntersecting)
         {
-            typeText(entry[i].target);
+            setTimeout(() => 
+            {
+                typeText(entry[i].target);
+            }, 200)
+            
         }
         else if (entry[i].target.innerHTML != "")
         {
