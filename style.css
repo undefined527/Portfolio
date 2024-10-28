@@ -1,3 +1,12 @@
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg); /* Include translation */
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg); /* Include translation */
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +19,7 @@ html {
 }
 
 body {
-    padding-top: 15vh;
+    padding-top: 110px;
     background: #000000;
 }
 
@@ -47,35 +56,81 @@ p {
 
 #header {
     width: 100%;
-    height: 12vh;
+    height: 110px;
     padding-top: 10px;
     top: 0;
     background: rgb(10,10,10);
     position: fixed;
+    z-index: 1000;
 }
 
-#title {
+#header-title {
     font-size: 65px;
 }
 
-#about-me {
+#home {
     width: 100%;
-    height: 500px;
+    height: calc(100vh - 110px);
+}
+
+#home-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    z-index: 10;
+}
+
+#home-animation {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#home-animation .rect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    transform-origin: center;
+}
+
+#about {
+    width: 100%;
+    padding-bottom: 100px;
 }
 
 #projects {
     width: 100%;
-    height: 500px;
 }
 
-#contact {
+#socials {
     width: 100%;
-    height: 500px;
+    height: 200px;
+    background: rgb(10,10,10);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#socials ul li {
+    margin: 10px 20px;
+    display: inline-block;
+    list-style: none;
 }
 
 #projects-list div {
     margin: 20px;
     padding: 20px;
+}
+
+.brand-icon {
+    width: 50px;
+    height: 50px;
+    color: white;
 }
 
 .container {
@@ -90,8 +145,38 @@ p {
 
 .section-title {
     font-size: 50px;
+    margin-bottom: 30px;
 }
 
-.project-item {
+.project-item-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-item-content-description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-item-content-description img {
+    margin-top: 50px;
+}
+
+.project-media {
     width: 50%;
 }
+
+.align-right {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    text-align: left;
+}
+
+.align-left {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+}
+
