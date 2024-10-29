@@ -14,13 +14,13 @@ const projects = [
     ),
     createProjectItemWithVideo(
         "Spirograph", 
-        "I built this project in java with the java.swing GUI library. This project allows you to generate spirographs based off a set of initial conditions.", 
+        "I built this project in java with the javax.swing GUI library. This project allows you to generate spirographs based off a set of initial conditions.", 
         '<iframe width="560" height="315" src="https://www.youtube.com/embed/vYFKrWWQpHs?si=6grmYNF3HrbyiDNt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "https://github.com/undefined527/Spirographs"
     ),
     createProjectItemWithImage(
         "Psuedo 3D Rendering", 
-        "This is another project I made with the help of the java.swing GUI library. This project tries to recreate the type of rendering old-school 3d games such as Doom used. As the name implies, this type of rendering technically isn't 3d.",
+        "This is another project I made with the help of the javax.swing GUI library. This project tries to recreate the type of rendering old-school 3d games such as Doom used. As the name implies, this type of rendering technically isn't 3d.",
         "images/pseudo-3d.PNG",
         "https://github.com/undefined527/Pseudo3d"
     )
