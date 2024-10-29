@@ -14,7 +14,7 @@ const projects = [
     ),
     createProjectItemWithVideo(
         "Spirograph", 
-        "I built this project in java with the of the java.swing GUI library. This project allows you to generate spirographs based off a set of initial conditions.", 
+        "I built this project in java with the java.swing GUI library. This project allows you to generate spirographs based off a set of initial conditions.", 
         '<iframe class="project-media" width="560" height="315" src="https://www.youtube.com/embed/u31qwQUeGuM?si=zqomWfHs3E69kKaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         ""
     ),
