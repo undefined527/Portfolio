@@ -1,4 +1,4 @@
-const TYPE_SPEED = 110; // miliseconds per character
+const TYPE_SPEED = 150; // miliseconds per character
 
 const intersectionObserver = new IntersectionObserver(typeTextOnIntersection, {threshold: .5})
 const typeTexts = document.querySelectorAll(".type-text");
@@ -15,8 +15,8 @@ const projects = [
     createProjectItemWithVideo(
         "Spirograph", 
         "I built this project in java with the java.swing GUI library. This project allows you to generate spirographs based off a set of initial conditions.", 
-        '<iframe class="project-media" width="560" height="315" src="https://www.youtube.com/embed/u31qwQUeGuM?si=zqomWfHs3E69kKaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
-        ""
+        '<iframe width="560" height="315" src="https://www.youtube.com/embed/vYFKrWWQpHs?si=6grmYNF3HrbyiDNt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "https://github.com/undefined527/Spirographs"
     ),
     createProjectItemWithImage(
         "Psuedo 3D Rendering", 
